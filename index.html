@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <!-- Zero to Mastery Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Quiz Box -->
+        <div id="quiz-box">
+            <h1 id="question-number"></h1>
+            <h2 id="question-text">Loading Questions...</h2>
+            <div id="timer">Time Left: <span id="time-left">10</span>s</div>
+            <div id="choices-container">
+                <!-- Populated Dynamically -->
+            </div>
+            <button type="button" id="next-btn" class="btn">Next</button>
+        </div>
+        <!-- Loader -->
+        <div id="loader" style="display: none;">
+            <h2>Loading High Scores...</h2>
+        </div>
+        <!-- High Scores -->
+        <div id="high-score-container" style="display: none;">
+            <table id="high-scores-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="high-scores-list">
+                    <!-- Populated Dynamically -->
+                </tbody>
+            </table>
+            <button type="button" id="play-again-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

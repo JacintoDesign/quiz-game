@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+/* Timer */
+#timer {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+#time-left {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Quiz Box */
+#choices-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.choice {
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #ddd;
+}
+
+.choice:disabled {
+    cursor: default;
+}
+
+.choice.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.choice.wrong {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    color: #333;
+    cursor: not-allowed;
+}
+
+/* High Scores */
+#high-score-container {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td, th {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0056b3;
+}
+
+td {
+    font-size: 0.9rem;
+}
+
+.highlight {
+    background-color: #80e280;
+}
